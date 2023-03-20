@@ -1,0 +1,2 @@
+apiKeyTelegram=""
+apiKeyOpenAI=""
