@@ -20,7 +20,7 @@ def write_data(id, role, request, response):
         write_data(id, role, request, response)
         
 def read_data(id, role):
-    file_path = Path('data/+role+_'+str(id)+'.csv')
+    file_path = Path('data/'+role+'_'+str(id)+'.csv')
     if file_path.is_file():
         df = pandas.read_csv(file_path)
         return list(df['request'])  
